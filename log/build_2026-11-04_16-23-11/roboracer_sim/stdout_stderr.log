@@ -1,0 +1,34 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+running egg_info
+creating roboracer_sim.egg-info
+writing roboracer_sim.egg-info/PKG-INFO
+writing dependency_links to roboracer_sim.egg-info/dependency_links.txt
+writing requirements to roboracer_sim.egg-info/requires.txt
+writing top-level names to roboracer_sim.egg-info/top_level.txt
+writing manifest file 'roboracer_sim.egg-info/SOURCES.txt'
+reading manifest file 'roboracer_sim.egg-info/SOURCES.txt'
+writing manifest file 'roboracer_sim.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/developer/ros2_ws/src/roboracer_sim/install/lib/python3.12/site-packages/roboracer-sim.egg-link (link to .)
+
+Installed /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim
+running symlink_data
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index/resource_index
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index/resource_index/packages
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/resource/roboracer_sim -> /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index/resource_index/packages
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/package.xml -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/launch
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/launch/simulation.launch.py -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/launch
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/config/track_trajectory.csv -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/config/trajektoria_plus.csv -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/config/bridge_config.yaml -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/worlds/track_old2.sdf -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/worlds/track_old.sdf -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/worlds/track.sdf -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/urdf
+symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/urdf/roboracer.urdf.xacro -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/urdf

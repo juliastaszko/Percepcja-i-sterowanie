@@ -1,0 +1,36 @@
+[0.989s] Invoking command in '/home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim': PYTHONPATH=/home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/developer/ros2_ws/src/roboracer_sim/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/build --no-deps symlink_data
+[1.270s] running develop
+[1.414s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+[1.414s]   self.local_index = Environment(self.shadow_path + sys.path)
+[1.445s] running egg_info
+[1.445s] creating roboracer_sim.egg-info
+[1.463s] writing roboracer_sim.egg-info/PKG-INFO
+[1.463s] writing dependency_links to roboracer_sim.egg-info/dependency_links.txt
+[1.463s] writing requirements to roboracer_sim.egg-info/requires.txt
+[1.464s] writing top-level names to roboracer_sim.egg-info/top_level.txt
+[1.464s] writing manifest file 'roboracer_sim.egg-info/SOURCES.txt'
+[1.497s] reading manifest file 'roboracer_sim.egg-info/SOURCES.txt'
+[1.498s] writing manifest file 'roboracer_sim.egg-info/SOURCES.txt'
+[1.516s] running build_ext
+[1.516s] Creating /home/developer/ros2_ws/src/roboracer_sim/install/lib/python3.12/site-packages/roboracer-sim.egg-link (link to .)
+[1.516s] 
+[1.516s] Installed /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim
+[1.516s] running symlink_data
+[1.516s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index
+[1.516s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index/resource_index
+[1.517s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index/resource_index/packages
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/resource/roboracer_sim -> /home/developer/ros2_ws/src/roboracer_sim/install/share/ament_index/resource_index/packages
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/package.xml -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim
+[1.517s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/launch
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/launch/simulation.launch.py -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/launch
+[1.517s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/config/track_trajectory.csv -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/config/trajektoria_plus.csv -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/config/bridge_config.yaml -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/config
+[1.517s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/worlds/track_old2.sdf -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/worlds/track_old.sdf -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+[1.517s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/worlds/track.sdf -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/worlds
+[1.517s] creating /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/urdf
+[1.518s] symbolically linking /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/urdf/roboracer.urdf.xacro -> /home/developer/ros2_ws/src/roboracer_sim/install/share/roboracer_sim/urdf
+[1.541s] Invoked command in '/home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim' returned '0': PYTHONPATH=/home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/developer/ros2_ws/src/roboracer_sim/install/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/developer/ros2_ws/src/roboracer_sim/build/roboracer_sim/build --no-deps symlink_data

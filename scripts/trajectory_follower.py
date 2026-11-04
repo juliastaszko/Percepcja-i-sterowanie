@@ -215,15 +215,15 @@ class RoboRacerFollower(Node):
         # WORLD -> ODOM transformation
 
         self.declare_parameter(
-            "world_offset_x", -2.0
+            "world_offset_x", 0.053895
         )
 
         self.declare_parameter(
-            "world_offset_y", 3.3
+            "world_offset_y", -1.982435
         )
 
         self.declare_parameter(
-            "world_offset_yaw", 1.57
+            "world_offset_yaw", -1.281783
         )
 
         # Load CSV
@@ -235,7 +235,7 @@ class RoboRacerFollower(Node):
         if not csv_path:
 
             raise ValueError(
-                "Set -p csv_path:=/absolute/path/to/trajektoria_plus.csv"
+                "Set -p csv_path:=/absolute/path/to/track_trajectory.csv"
             )
 
         self.path = load_path(csv_path)

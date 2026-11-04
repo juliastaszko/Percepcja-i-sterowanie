@@ -1,0 +1,224 @@
+
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="track_plus">
+
+    <!-- Wtyczki systemowe -->
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <!-- Oświetlenie -->
+    <light type="directional" name="sun">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Podłoże 20 x 20 m -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="ground">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!--
+      TOR PLUS
+      Zewnętrzny obrys: 10 x 10 m
+      Szerokość ramion zewnętrznych: 6 m
+      Wysepka: 6 x 6 m, ramiona szerokości 2 m
+      Droga: 2 m
+      Wysokość ścian: 0.3 m
+      Grubość ścian: 0.1 m
+    -->
+
+    <model name="walls_plus">
+      <static>true</static>
+
+      <!-- ZEWNĘTRZNE ŚCIANY -->
+
+      <!-- Dolny koniec -->
+      <link name="outer_south">
+        <pose>0 -5 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>6 0.1 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>6 0.1 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Dolna prawa krawędź pionowego ramienia -->
+      <link name="outer_south_east">
+        <pose>3 -4 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Dolna krawędź prawego ramienia -->
+      <link name="outer_east_south">
+        <pose>4 -3 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Prawy koniec -->
+      <link name="outer_east">
+        <pose>5 0 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>0.1 6 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>0.1 6 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Górna krawędź prawego ramienia -->
+      <link name="outer_east_north">
+        <pose>4 3 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Górna prawa krawędź pionowego ramienia -->
+      <link name="outer_north_east">
+        <pose>3 4 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Górny koniec -->
+      <link name="outer_north">
+        <pose>0 5 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>6 0.1 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>6 0.1 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Górna lewa krawędź pionowego ramienia -->
+      <link name="outer_north_west">
+        <pose>-3 4 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Górna krawędź lewego ramienia -->
+      <link name="outer_west_north">
+        <pose>-4 3 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Lewy koniec -->
+      <link name="outer_west">
+        <pose>-5 0 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>0.1 6 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>0.1 6 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Dolna krawędź lewego ramienia -->
+      <link name="outer_west_south">
+        <pose>-4 -3 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>2 0.1 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Dolna lewa krawędź pionowego ramienia -->
+      <link name="outer_south_west">
+        <pose>-3 -4 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>0.1 2 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- WEWNĘTRZNA, PEŁNA WYSEPKA W KSZTAŁCIE PLUS -->
+
+      <!-- Pionowe ramię wysepki -->
+      <link name="island_vertical">
+        <pose>0 0 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>2 6 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>2 6 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+      <!-- Poziome ramię wysepki -->
+      <link name="island_horizontal">
+        <pose>0 0 0.15 0 0 0</pose>
+        <collision name="c">
+          <geometry><box><size>6 2 0.3</size></box></geometry>
+        </collision>
+        <visual name="v">
+          <geometry><box><size>6 2 0.3</size></box></geometry>
+        </visual>
+      </link>
+
+    </model>
+  </world>
+</sdf>
