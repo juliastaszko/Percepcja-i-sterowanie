@@ -18,7 +18,7 @@ def generate_launch_description():
 
     world_file = os.path.join(pkg_dir, 'worlds', 'track.sdf')
     bridge_config = os.path.join(pkg_dir, 'config', 'bridge_config.yaml')
-    xacro_file = os.path.join(pkg_dir, 'urdf', 'roboracer.urdf.xacro')
+    xacro_file = os.path.join(pkg_dir, 'urdf', 'roboracer_gym.urdf.xacro')
     rviz_config = os.path.join(description_dir, 'rviz', 'roboracer.rviz')
 
     body_arg = DeclareLaunchArgument('body', default_value='shell', choices=['shell', 'open'])
@@ -43,11 +43,14 @@ def generate_launch_description():
         launch_arguments={'gz_args': '-r ' + world_file}.items()
     )
 
+    #tor z ostrym zakretem '-x', '0.0','-y', '-4.0','-z', '0.05','-Y', '0.0'
+    # tor 8  '-x', '-3.38','-y', '5.01','-z', '0.05','-Y', '0.54'
+
     spawn_robot = Node(
         package='ros_gz_sim',
         executable='create',
         arguments=['-topic', 'robot_description','-name', 'roboracer',
-                   '-x', '0.0','-y', '-4.0','-z', '0.05','-Y', '0.0'],
+                   '-x', '-3.38','-y', '5.01','-z', '0.05','-Y', '0.54'],
 
         output='screen'
     )

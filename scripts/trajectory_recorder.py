@@ -1,20 +1,5 @@
 #!/usr/bin/env python3
-"""
-ROS 2 trajectory recorder for RoboRacer.
 
-Subscribes:
-  /odom     nav_msgs/msg/Odometry
-  /cmd_vel  geometry_msgs/msg/Twist
-
-Behaviour:
-  - Waits for the first /cmd_vel message before starting the recording.
-  - Records odometry (x, y, z, yaw) and velocity to CSV.
-  - Stops and saves automatically when /cmd_vel messages stop arriving
-    for `stop_after` seconds. This allows the recorder to run in its own
-    terminal and finish after the controller node is stopped.
-
-The node never publishes commands and does not modify the controller.
-"""
 
 import csv
 import math
@@ -41,7 +26,7 @@ class TrajectoryRecorder(Node):
 
         self.declare_parameter('odom_topic', '/odom')
         self.declare_parameter('cmd_vel_topic', '/cmd_vel')
-        self.declare_parameter('output_csv', '~/ros2_ws/src/roboracer_sim/config/trajectory_actual.csv')
+        self.declare_parameter('output_csv', '~/ros2_ws/src/roboracer_sim/config/trajectory_actual_pid_0_50.csv')
         self.declare_parameter('stop_after', 3.0)
         self.declare_parameter('min_record_interval', 0.02)
 
