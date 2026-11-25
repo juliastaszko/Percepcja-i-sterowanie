@@ -1,0 +1,40 @@
+POROWNANIE TRAJEKTORII SAMOCHODU
+================================================================================================================
+Trajektoria referencyjna: track_trajectory.csv
+Liczba punktow referencyjnych: 288
+Dlugosc trajektorii referencyjnej: 28.6092 m
+
+ Predkosc | Liczba pkt |  Dlugosc [m] |   MAE [m] |  RMSE [m] |  Mediana [m] |   P95 [m] |   Max [m]
+----------------------------------------------------------------------------------------------------------------
+    0.22 |       4542 |       29.660 |    0.1103 |    0.1173 |       0.1219 |    0.1613 |    0.1749
+    0.30 |       3306 |       29.312 |    0.1088 |    0.1160 |       0.1206 |    0.1602 |    0.1737
+    0.40 |       2522 |       29.701 |    0.1053 |    0.1134 |       0.1164 |    0.1573 |    0.1697
+    0.50 |       2040 |       29.856 |    0.1024 |    0.1113 |       0.1174 |    0.1536 |    0.1634
+    0.60 |       1765 |       30.797 |    0.0975 |    0.1076 |       0.1137 |    0.1539 |    0.1668
+    0.70 |       1798 |       36.242 |    0.1010 |    0.1112 |       0.1160 |    0.1602 |    0.1722
+    0.80 |       1544 |       34.574 |    0.1028 |    0.1144 |       0.1122 |    0.1704 |    0.2531
+    0.90 |       1556 |       34.593 |    0.0978 |    0.1139 |       0.0975 |    0.1930 |    0.2982
+    1.00 |       1291 |       32.395 |    0.0941 |    0.1088 |       0.0982 |    0.1804 |    0.2333
+    1.10 |       1650 |       32.920 |    0.0886 |    0.1186 |       0.0665 |    0.2352 |    0.6078
+    1.20 |       1855 |       34.217 |    0.0969 |    0.1188 |       0.0866 |    0.2551 |    0.3563
+    1.30 |       2780 |       31.891 |    0.1093 |    0.1390 |       0.0957 |    0.2923 |    0.4619
+
+Pliki uwzglednione w zestawieniu:
+  trajectory_actual_pp_0_22.csv
+  trajectory_actual_pp_0_3.csv
+  trajectory_actual_pp_0_4.csv
+  trajectory_actual_pp_0_5.csv
+  trajectory_actual_pp_0_6.csv
+  trajectory_actual_pp_0_7.csv
+  trajectory_actual_pp_0_8.csv
+  trajectory_actual_pp_0_9.csv
+  trajectory_actual_pp_1_0.csv
+  trajectory_actual_pp_1_1.csv
+  trajectory_actual_pp_1_2.csv
+  trajectory_actual_pp_1_3.csv
+
+Metoda: dla kazdego punktu trajektorii rzeczywistej obliczono
+najmniejsza odleglosc od dowolnego odcinka trajektorii referencyjnej.
+MAE, RMSE, mediana, P95 i maksimum dotycza tych odleglosci.
+Uwaga: jest to blad geometryczny (cross-track), bez uwzgledniania
+kolejnosci przejechania punktow na trasie.

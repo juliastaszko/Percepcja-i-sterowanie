@@ -1,0 +1,50 @@
+POROWNANIE TRAJEKTORII SAMOCHODU
+================================================================================================================
+Trajektoria referencyjna: track_trajectory.csv
+Liczba punktow referencyjnych: 288
+Dlugosc trajektorii referencyjnej: 28.6092 m
+
+ Predkosc | Liczba pkt |  Dlugosc [m] |   MAE [m] |  RMSE [m] |  Mediana [m] |   P95 [m] |   Max [m]
+----------------------------------------------------------------------------------------------------------------
+    0.22 |       4235 |       30.324 |    0.1142 |    0.1216 |       0.1253 |    0.1729 |    0.1900
+    0.25 |       3946 |       31.856 |    0.1137 |    0.1209 |       0.1249 |    0.1696 |    0.1846
+    0.30 |       3104 |       29.870 |    0.1073 |    0.1144 |       0.1170 |    0.1628 |    0.1759
+    0.35 |       2754 |       30.511 |    0.1037 |    0.1104 |       0.1131 |    0.1563 |    0.1667
+    0.40 |       2475 |       31.195 |    0.1002 |    0.1066 |       0.1100 |    0.1499 |    0.1623
+    0.45 |       2214 |       30.928 |    0.0961 |    0.1023 |       0.1058 |    0.1432 |    0.1573
+    0.50 |       2014 |       30.928 |    0.0920 |    0.0979 |       0.1006 |    0.1360 |    0.1505
+    0.55 |       1810 |       30.416 |    0.0877 |    0.0934 |       0.0956 |    0.1298 |    0.1435
+    0.60 |       1652 |       30.004 |    0.0846 |    0.0900 |       0.0922 |    0.1236 |    0.1363
+    0.65 |       1584 |       30.813 |    0.0808 |    0.0862 |       0.0886 |    0.1178 |    0.1333
+    0.70 |       1517 |       31.438 |    0.0785 |    0.0844 |       0.0858 |    0.1192 |    0.2231
+    0.80 |       1366 |       32.065 |    0.0748 |    0.0827 |       0.0759 |    0.1112 |    0.3414
+    0.90 |       1235 |       31.600 |    0.0740 |    0.0821 |       0.0726 |    0.1238 |    0.1982
+    1.00 |       1157 |       32.017 |    0.0718 |    0.0814 |       0.0688 |    0.1346 |    0.1827
+    1.10 |       1204 |       32.200 |    0.0797 |    0.1071 |       0.0623 |    0.1694 |    0.5346
+    1.20 |       1354 |       29.721 |    0.0690 |    0.0889 |       0.0587 |    0.1775 |    0.2926
+    1.30 |       1264 |       29.998 |    0.0759 |    0.1005 |       0.0631 |    0.2015 |    0.3286
+
+Pliki uwzglednione w zestawieniu:
+  trajectory_actual_pid_0_22.csv
+  trajectory_actual_pid_0_25.csv
+  trajectory_actual_pid_0_30.csv
+  trajectory_actual_pid_0_35.csv
+  trajectory_actual_pid_0_40.csv
+  trajectory_actual_pid_0_45.csv
+  trajectory_actual_pid_0_50.csv
+  trajectory_actual_pid_0_55.csv
+  trajectory_actual_pid_0_60.csv
+  trajectory_actual_pid_0_65.csv
+  trajectory_actual_pid_0_70.csv
+  trajectory_actual_pid_0_80.csv
+  trajectory_actual_pid_0_90.csv
+  trajectory_actual_pid_1_0.csv
+  trajectory_actual_pid_1_1.csv
+  trajectory_actual_pid_1_2.csv
+  trajectory_actual_pid_1_3.csv
+
+Metoda: dla kazdego punktu trajektorii rzeczywistej obliczono
+najmniejsza odleglosc od dowolnego odcinka trajektorii referencyjnej.
+MAE, RMSE, mediana, P95 i maksimum dotycza tych odleglosci.
+Uwaga: jest to blad geometryczny (cross-track), bez uwzgledniania
+kolejnosci przejechania punktow na trasie.
